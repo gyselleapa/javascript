@@ -13,23 +13,94 @@ batata_palha = 1,5 kg
 
 // pois vamos usar inteiros para declarar nossas constantes
 
+const CAP_POTEFEIJAO= 1000, CAP_POTEARROZ=5000,  CAP_POTEACUCAR=5000,  CAP_POTEMACARRAO=500,  CAP_POTEFARINHA=250,  CAP_POTECAFE=500,  CAP_POTEBATATA=1.5;  //CAP=CAPACIDADE
+
+var quant1, potefeijao=0, potearroz=0, poteacucar=0, potemacarrao=0, potefarinha=0, potecafe=0, potebatapalha=0;
+
 let opcao=prompt( "digite: \n 1 - feijao\n 2 - arroz \n 3 - acucar \n 4 - macarrao \n 5 - farinha  \n 6- cafe \n 7 - batata_palha \n ");
 //meu opcao esta valendo o que eu digitei
+
+quant1=prompt("qual a contidade de mantimento")
+
 switch (opcao) 
 {
-  case 0:
-    text = "Off";
-    break;
-  case 1:
-    text = "On";
-    break;
+
+	case 1:
+		pote_feijao (quant1);
+		break;
+	case 2:
+		pote_arroz (quant1);
+		break;
+	case 3:
+		pote_acucar (quant1);
+		break;
+	case 4:
+		pote_macarrao (quant1);
+		break;
+	case 5:
+		pote_farinha (quant1);
+		break;
+	case 6:
+		pote_cafe(quant1);
+		break;
+	case 7:
+		pote_bata_palha (quant1);
+		break;
+	
   default:
     text = "No value found";
+	
+	
+}
+
+function pote_feijao(quant1) 
+{
+	if(potefeijao < CAP_POTEFEIJAO ) // proxima aula boleando
+	{
+		let sobrando =0;
+		// encher o pote de feijao 
+		potefeijao=potefeijao+quant1;
+		sobrando= CAP_POTEFEIJAO - potefeijao; 
+		return sobrando=0;
+	}
+	else 
+	{
+		let sobrando =0;
+		prompt("o pote ja esta cheio ")
+		return sobrando;
+		
+	}
+
+  return p1 * p2;
+}
+
+function pote_arroz(quant1) 
+{
+  return p1 * p2;
+}
+
+function pote_acucar(quant1) 
+{
+  return p1 * p2;
+}
+
+function pote_macarrao(quant1) 
+{
+  return p1 * p2;
+}
+
+function pote_farinha(quant1) 
+{
+  return p1 * p2;
+}
+
+function pote_cafe(quant1) 
+{
+  return p1 * p2;
+}
+
+function pote_batapalha(quant1) 
+{
+  return p1 * p2;
 }
 </script>
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
