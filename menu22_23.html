@@ -1,38 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        let opcao = prompt("digite;\n1-feijao;\n2-arroz\n3-acucar\n4-macarrao\n5-farinha\n6-cafe\n7-batata_palha\n" );
+<script>
+/*
+feijao = 1kg
+arroz = 5kg
+acucar = 5kg
+macarrao = 500grs
+farinha = 250 grs
+cafe = 500 grs
+batata_palha = 1,5 kg
+*/
 
-        switch (opcao) {
-            case 1:
-                day = "Sunday";
-                break;
-            case 2:
-                day = "Monday";
-                break;
-            case 3:
-                day = "Tuesday";
-                break;
-            case 4:
-                day = "Wednesday";
-                break;
-            case 5:
-                day = "Thursday";
-                break;
-            case 6:
-                day = "Friday";
-                break;
-            case 7:
-                day = "Saturday";
-        }
-                
-        </script>
-</body>
-</html>
+// as unidades consideradas serao em gramas 
+
+// pois vamos usar inteiros para declarar nossas constantes
+
+let opcao=prompt( "digite: \n 1 - feijao\n 2 - arroz \n 3 - acucar \n 4 - macarrao \n 5 - farinha  \n 6- cafe \n 7 - batata_palha \n ");
+//meu opcao esta valendo o que eu digitei
+switch (opcao) 
+{
+  case 0:
+    text = "Off";
+    break;
+  case 1:
+    text = "On";
+    break;
+  default:
+    text = "No value found";
+}
+</script>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
