@@ -1,4 +1,5 @@
 <script>
+
 /*
 feijao = 1kg
 arroz = 5kg
@@ -9,18 +10,25 @@ cafe = 500 grs
 batata_palha = 1,5 kg
 */
 
+
 // as unidades consideradas serao em gramas 
+
 
 // pois vamos usar inteiros para declarar nossas constantes
 
+
 const CAP_POTEFEIJAO= 1000, CAP_POTEARROZ=5000,  CAP_POTEACUCAR=5000,  CAP_POTEMACARRAO=500,  CAP_POTEFARINHA=250,  CAP_POTECAFE=500,  CAP_POTEBATATA=1.5;  //CAP=CAPACIDADE
 
+
 var quant1, potefeijao=0, potearroz=0, poteacucar=0, potemacarrao=0, potefarinha=0, potecafe=0, potebatapalha=0;
+
 
 let opcao=prompt( "digite: \n 1 - feijao\n 2 - arroz \n 3 - acucar \n 4 - macarrao \n 5 - farinha  \n 6- cafe \n 7 - batata_palha \n ");
 //meu opcao esta valendo o que eu digitei
 
+
 quant1=prompt("qual a contidade de mantimento")
+
 
 switch (opcao) 
 {
@@ -47,20 +55,58 @@ switch (opcao)
 		pote_bata_palha (quant1);
 		break;
 	
-  default:
-    text = "No value found";
+  		
+	default:
+    		text = "No value found";
 	
 	
 }
 
+
+
 function pote_feijao(quant1) 
 {
-	if(potefeijao < CAP_POTEFEIJAO ) // proxima aula boleando
+
+	if(potefeijao < CAP_POTEFEIJAO ) 
 	{
 		let sobrando =0;
+
 		// encher o pote de feijao 
+
 		potefeijao=potefeijao+quant1;
 		sobrando= CAP_POTEFEIJAO - potefeijao; 
+		return sobrando=0;
+	}
+	else 
+	{
+		let sobrando =0;
+		prompt("o pote ja esta cheio ")
+		return sobrando;
+		
+
+	}
+
+	
+	boleano
+
+
+ 	 return p1 * p2;
+
+}
+
+
+
+function pote_arroz(quant1) 
+{
+
+	if(potearroz < CAP_POTEARROZ ) 
+	{
+		let sobrando =0;
+
+		// encher o pote de arroz 
+
+		potearroz = potearroz + quant1;
+		sobrando= CAP_POTEARROZ - potearroz; 
 		return sobrando=0;
 	}
 	else 
@@ -72,35 +118,144 @@ function pote_feijao(quant1)
 	}
 
   return p1 * p2;
+
 }
 
-function pote_arroz(quant1) 
-{
-  return p1 * p2;
-}
+
 
 function pote_acucar(quant1) 
 {
+
+	if(poteacucar < CAP_POTEACUCAR )  
+	{
+		let sobrando =0;
+
+		// encher o pote de acucar
+
+		poteacucar = poteacucar + quant1;
+		sobrando= CAP_POTEACUCAR - poteacucar; 
+		return sobrando=0;
+	}
+	else 
+	{
+		let sobrando =0;
+		prompt("o pote ja esta cheio ")
+		return sobrando;
+		
+	}
+
+
   return p1 * p2;
+
 }
+
+
 
 function pote_macarrao(quant1) 
 {
+
+	if(potemacarrao < CAP_POTEMACARRAO )  
+	{
+		let sobrando =0;
+
+		// encher o pote de macarrao 
+
+		potemacarrao = potemacarrao + quant1;
+		sobrando= CAP_POTEMACARRAO - potemacarrao; 
+		return sobrando=0;
+	}
+	else 
+	{
+		let sobrando =0;
+		prompt("o pote ja esta cheio ")
+		return sobrando;
+		
+	}
+
   return p1 * p2;
+
 }
+
+
 
 function pote_farinha(quant1) 
 {
+
+	if(potefarinha < CAP_POTEFARINHA ) 
+	{
+		let sobrando =0;
+
+		// encher o pote de farinha
+
+		potefarinha = potefarinha + quant1;
+		sobrando= CAP_POTEFARINHA - potefarinha; 
+		return sobrando=0;
+	}
+	else 
+	{
+		let sobrando =0;
+		prompt("o pote ja esta cheio ")
+		return sobrando;
+		
+	}
+
   return p1 * p2;
+
 }
+
+
 
 function pote_cafe(quant1) 
 {
+
+	if(potecafe < CAP_POTECAFE )  
+	{
+		let sobrando =0;
+
+		// encher o pote de cafe
+
+		potecafe = potecafe + quant1;
+		sobrando= CAP_POTECAFE - potecafe; 
+		return sobrando=0;
+	}
+	else 
+	{
+		let sobrando =0;
+		prompt("o pote ja esta cheio ")
+		return sobrando;
+		
+	}
+	
   return p1 * p2;
+
 }
+
 
 function pote_batapalha(quant1) 
 {
+
+	if(potebatapalha < CAP_POTEBATATA ) 
+	{
+		let sobrando =0;
+
+		// encher o pote de batata
+
+		potebatapalha = potebatapalha + quant1;
+		sobrando= CAP_POTEBATATA - potemacarrao; 
+		return sobrando=0;
+	}
+	else 
+	{
+		let sobrando =0;
+		prompt("o pote ja esta cheio ")
+		return sobrando;
+		
+	}
+
+
   return p1 * p2;
+
 }
+
+
 </script>
