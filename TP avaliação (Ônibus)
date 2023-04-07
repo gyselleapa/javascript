@@ -1,0 +1,50 @@
+// Obtém a data/hora atual
+var data = new Date();
+
+// Guarda cada pedaço em uma variável
+var hora    = data.getHours();          // 0-23
+var min     = data.getMinutes();        // 0-59
+var seg     = data.getSeconds();        // 0-59
+var mseg    = data.getMilliseconds();   // 0-999
+var tz      = data.getTimezoneOffset(); // em minutos
+
+// Formata a data e a hora (note o mês + 1)
+var str_hora = hora + ':' + min + ':' + seg;
+
+// Mostra o resultado
+alert(' Atualmente são ' + str_hora);
+
+var oni_meiodia=0, oni_meiodia_meio=0, oni_umahr=0, oni_umahr_meia=0, oni_duashr=0, oni_duashr_meia=0, oni_treshr=0;
+
+let opcao=prompt( "digite a hora desejada do onibus-6120: \n 1 - 12:00\n 2 - 12:30 \n 3 - 13:00 \n 4 - 13:30 \n 5 - 14:00  \n 6 - 14:30 \n 7 - 15:00 \n ");
+
+switch (opcao) 
+{
+
+	case 1:
+	    oni_meiodia;
+		break;
+	case 2:
+		oni_meiodia_meio;
+		break;
+	case 3:
+		oni_umahr;
+		break;
+	case 4:
+		oni_umahr_meia;
+		break;
+	case 5:
+		oni_duashr;
+		break;
+	case 6:
+		oni_duashr_meia;
+		break;
+	case 7:
+		oni_treshr;
+		break;
+	
+  		
+	default:
+    		text = "Não ha onibus nesse horario";
+    		
+}
