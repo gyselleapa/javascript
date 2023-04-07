@@ -1,0 +1,75 @@
+// Obtém a data/hora atual
+var data = new Date();
+
+// Guarda cada pedaço em uma variável
+var hora    = data.getHours();          // 0-23
+var min     = data.getMinutes();        // 0-59
+var seg     = data.getSeconds();        // 0-59
+var mseg    = data.getMilliseconds();   // 0-999
+var tz      = data.getTimezoneOffset(); // em minutos
+
+// Formata a data e a hora (note o mês + 1)
+var str_hora = hora + ':' + min + ':' + seg;
+
+// Mostra o resultado
+alert(' Atualmente são ' + str_hora);
+
+const ONI_MEIODIA=1200, ONI_MEIODIA_MEIO=1230, ONI_UMAHR=1300, ONI_UMAHR_MEIA=1330, ONI_DUASHR=1400, ONI_DUASHR_MEIA=1430, ONI_TRESHR=1500;
+
+var confi, oni_meiodia, oni_meiodia_meio, oni_umahr, oni_umahr_meia, oni_duashr, oni_duashr_meia, oni_treshr;
+
+let opcao=prompt( "digite a hora desejada do onibus-6120: \n 1 - 12:00\n 2 - 12:30 \n 3 - 13:00 \n 4 - 13:30 \n 5 - 14:00  \n 6 - 14:30 \n 7 - 15:00 \n ");
+
+confi=prompt("confirme o horario(sem os dois ponto(:)): ")
+
+switch (opcao) 
+{
+
+	case 1:
+	    oni_meiodia(confi);
+		break;
+	case 2:
+		oni_meiodia_meio(confi);
+		break;
+	case 3:
+		oni_umahr(confi);
+		break;
+	case 4:
+		oni_umahr_meia(confi);
+		break;
+	case 5:
+		oni_duashr(confi);
+		break;
+	case 6:
+		oni_duashr_meia(confi);
+		break;
+	case 7:
+		oni_treshr(confi);
+		break;
+	
+  		
+	default:
+    		text = "Não ha onibus nesse horario";
+    		
+}
+
+
+function oni_meiodia()
+{
+
+	if(ONI_MEIODIA < str_hora ) 
+	{
+		prompt("o onibus nao passou ")
+	}
+	
+	else if (ONI_MEIODIA == str_hora) 
+	{
+	    prompt("procure se o onibus nao passou ")
+	}
+	
+	else 
+	{
+		prompt("o onibus ja pode ter passsdo, chame um uber para nao se atrasar ")
+	}
+
+}
