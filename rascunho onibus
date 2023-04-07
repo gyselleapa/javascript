@@ -49,27 +49,146 @@ switch (opcao)
 	
   		
 	default:
-    		text = "Não ha onibus nesse horario";
+    		text = "No value found";
     		
 }
 
 
-function oni_meiodia()
+function oni_meiodia(confi)
 {
 
 	if(ONI_MEIODIA < str_hora ) 
 	{
-		prompt("o onibus nao passou ")
+		prompt("o onibus de 12:00 nao passou ")
 	}
 	
 	else if (ONI_MEIODIA == str_hora) 
+	{
+	    prompt("procure se o onibus ainda nao passou ")
+	}
+	
+	//outro else if que informe 5 mins a mais, tipo entre tal horario 
+	
+	//else if (1205 == str_hora) 
+	//{
+//	    prompt("procure se o onibus ainda nao passou ")
+//	} 
+	
+	else 
+	{
+		prompt("o onibus de 12:00 ja passou , chame um uber para nao se atrasar ")
+	}
+
+}
+
+function oni_meiodia_meio(confi)
+{
+
+	if(ONI_MEIODIA_MEIO < str_hora ) 
+	{
+		prompt("o onibus de 12:30 nao passou ")
+	}
+	
+	else if (ONI_MEIODIA_MEIO == str_hora) 
 	{
 	    prompt("procure se o onibus nao passou ")
 	}
 	
 	else 
 	{
-		prompt("o onibus ja pode ter passsdo, chame um uber para nao se atrasar ")
+		prompt("o onibus de 12:30 ja passou , chame um uber para nao se atrasar ")
+	}
+
+}
+function oni_umahr(confi)
+{
+
+	if(ONI_UMAHR < str_hora ) 
+	{
+		prompt("o onibus de 13:00 nao passou ")
+	}
+	
+	else if (ONI_UMAHR == str_hora) 
+	{
+	    prompt("procure se o onibus nao passou ")
+	}
+	
+	else 
+	{
+		prompt("o onibus de 13:00 ja passou , chame um uber para nao se atrasar  ")
+	}
+
+}
+function  oni_umahr_meia(confi)
+{
+
+	if(ONI_UMAHR_MEIA < str_hora ) 
+	{
+		prompt("o onibus de 13:00 nao passou ")
+	}
+	
+	else if (ONI_UMAHR_MEIA == str_hora) 
+	{
+	    prompt("procure se o onibus nao passou ")
+	}
+	
+	else 
+	{
+		prompt("o onibus de 13:00 ja passou , chame um uber para nao se atrasar  ")
+	}
+
+}function oni_duashr(confi)
+{
+
+	if(ONI_DUASHR < str_hora ) 
+	{
+		prompt("o onibus de 13:00 nao passou ")
+	}
+	
+	else if (ONI_DUASHR == str_hora) 
+	{
+	    prompt("procure se o onibus nao passou ")
+	}
+	
+	else 
+	{
+		prompt("o onibus de 13:00 ja passou , chame um uber para nao se atrasar  ")
+	}
+
+}function oni_duashr_meia(confi)
+{
+
+	if(ONI_DUASHR_MEIA < str_hora ) 
+	{
+		prompt("o onibus de 13:00 nao passou ")
+	}
+	
+	else if (ONI_DUASHR_MEIA == str_hora) 
+	{
+	    prompt("procure se o onibus nao passou ")
+	}
+	
+	else 
+	{
+		prompt("o onibus de 13:00 ja passou , chame um uber para nao se atrasar  ")
+	}
+
+}function oni_treshr(confi)
+{
+
+	if(ONI_TRESHR < str_hora ) 
+	{
+		prompt("o onibus de 13:00 nao passou ")
+	}
+	
+	else if (ONI_TRESHR == str_hora) 
+	{
+	    prompt("procure se o onibus nao passou ")
+	}
+	
+	else 
+	{
+		prompt("o onibus de 13:00 ja passou , chame um uber para nao se atrasar  ")
 	}
 
 }
